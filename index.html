@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowboy Smokes - From Farm to Flame</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://googleusercontent.com/file_content/7');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .card {
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+        }
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-black bg-opacity-80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div>
+                <!-- Corrected Logo Image -->
+                <img src="http://googleusercontent.com/file_content/19" alt="Cowboy Smokes Logo" class="h-16 w-auto">
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#products" class="text-gray-300 hover:text-white">Products</a>
+                <a href="#story" class="text-gray-300 hover:text-white">Our Story</a>
+                <a href="#gallery" class="text-gray-300 hover:text-white">Gallery</a>
+                <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black bg-opacity-90">
+            <a href="#products" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800">Products</a>
+            <a href="#story" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800">Our Story</a>
+            <a href="#gallery" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800">Gallery</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-800">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen flex items-center justify-center text-white text-center">
+        <div class="bg-black bg-opacity-60 p-10 rounded-lg max-w-3xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-playfair font-bold mb-4">The Smoke of Outlaws and Legends.</h1>
+            <p class="text-xl md:text-2xl mb-8">Not a cigarette. Not a cigar. Just pure fire... Cowboy-style.</p>
+            <a href="#products" class="bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-3 px-8 rounded-lg text-lg btn">Explore Our Smokes</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-playfair font-bold text-center mb-12">Our Offerings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1: Cowboy Smokes -->
+                <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
+                    <img src="http://googleusercontent.com/file_content/18" alt="Cowboy Smokes 5 pack" class="w-full h-56 object-contain p-4">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Cowboy Smokes</h3>
+                        <p class="text-gray-400 mb-4">"Raw, Rolled, and Ready."</p>
+                        <p class="mb-4 flex-grow">The original. A classic 100% whole-leaf tobacco smoke. Bold, direct, and unforgettable.</p>
+                        <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
+                    </div>
+                </div>
+                <!-- Product Card 2: Cowboy Lights -->
+                <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
+                    <img src="http://googleusercontent.com/file_content/15" alt="Cowboy Lights 5-pack" class="w-full h-56 object-contain p-4">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Cowboy Lights</h3>
+                        <p class="text-gray-400 mb-4">"Old soul. New spark."</p>
+                        <p class="mb-4 flex-grow">A slightly shorter and smaller smoke, for a quicker, yet equally satisfying experience.</p>
+                        <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
+                    </div>
+                </div>
+                <!-- Product Card 3: Cowboy Rolls -->
+                <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
+                    <img src="http://googleusercontent.com/file_content/17" alt="Cowboy Rolls whole leaf tobacco" class="w-full h-56 object-contain p-4">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Cowboy Rolls</h3>
+                        <p class="text-gray-400 mb-4">"Whole leaf. Whole truth."</p>
+                        <p class="mb-4 flex-grow">Premium whole leaf tobacco for those who prefer to roll their own legend. Bold and clean.</p>
+                        <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
+                    </div>
+                </div>
+                <!-- Product Card 4: Cowboy Cut -->
+                <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
+                    <img src="http://googleusercontent.com/file_content/16" alt="Cowboy Cut rolling tobacco" class="w-full h-56 object-contain p-4">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Cowboy Cut</h3>
+                        <p class="text-gray-400 mb-4">"The Real Leaf, The Right Cut."</p>
+                        <p class="mb-4 flex-grow">Smooth, specialty cut 100% whole leaf tobacco for the perfect roll-your-own smoke.</p>
+                        <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- From Farm to Flame Section -->
+    <section id="story" class="py-20 bg-black bg-opacity-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-playfair font-bold">From Farm to Flame</h2>
+                <p class="text-lg text-gray-400 mt-4">The journey of a true Cowboy Smoke.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 p-4">
+                    <img src="http://googleusercontent.com/file_content/18" alt="Cowboy Smokes package showing Farm to Flame process" class="rounded-lg shadow-2xl">
+                </div>
+                <div class="md:w-1/2 p-4">
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start"><span class="text-yellow-600 font-bold mr-2">✓</span> <strong>Seed:</strong> Criollo '98 seed planted in rich volcanic loam.</li>
+                        <li class="flex items-start"><span class="text-yellow-600 font-bold mr-2">✓</span> <strong>Seedling:</strong> Transplanted to Lot 12A under shade.</li>
+                        <li class="flex items-start"><span class="text-yellow-600 font-bold mr-2">✓</span> <strong>Harvest:</strong> Leaves primed by hand at peak ripeness.</li>
+                        <li class="flex items-start"><span class="text-yellow-600 font-bold mr-2">✓</span> <strong>Cure:</strong> Air-cured in Secadero 3 for 45 days.</li>
+                        <li class="flex items-start"><span class="text-yellow-600 font-bold mr-2">✓</span> <strong>Ferment:</strong> Slow pilon fermentation, turned weekly.</li>
+                        <li class="flex items-start"><span class="text-yellow-600 font-bold mr-2">✓</span> <strong>Aged:</strong> Rested 18 months in Spanish cedar.</li>
+                        <li class="flex items-start"><span class="text-yellow-600 font-bold mr-2">✓</span> <strong>Finish:</strong> Draw tested, banded, and packed by hand.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jingle Section -->
+    <section class="py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-playfair font-bold mb-8">The Sound of Cowboy Smokes</h2>
+            <div class="bg-gray-800 p-8 rounded-lg max-w-2xl mx-auto">
+                <p class="text-lg italic mb-6">"Whole-leaf bold, like the stories they spoke,<br>This ain’t no cigarette — it’s a Cowboy Smoke."</p>
+                <audio class="w-full">
+                    <source src="#" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-black bg-opacity-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-playfair font-bold text-center mb-12">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg" src="http://googleusercontent.com/file_content/18" alt="Cowboy Smokes 5-pack"></div>
+                    <div><img class="h-auto max-w-full rounded-lg" src="http://googleusercontent.com/file_content/15" alt="Cowboy Lights package"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg" src="http://googleusercontent.com/file_content/17" alt="Cowboy Rolls package"></div>
+                    <div><img class="h-auto max-w-full rounded-lg" src="http://googleusercontent.com/file_content/16" alt="Cowboy Cut package"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg" src="http://googleusercontent.com/file_content/11" alt="A collection of Cowboy Smokes"></div>
+                    <div><img class="h-auto max-w-full rounded-lg" src="http://googleusercontent.com/file_content/12" alt="Two hand-rolled smokes"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg" src="http://googleusercontent.com/file_content/7" alt="Smokes ready for enjoyment"></div>
+                    <div><img class="h-auto max-w-full rounded-lg" src="http://googleusercontent.com/file_content/8" alt="Detailed view of a Cowboy Smoke"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-black py-12">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+             <img src="http://googleusercontent.com/file_content/19" alt="Cowboy Smokes Logo" class="h-20 w-auto mx-auto mb-4">
+            <p class="mb-4">Cowboy Smokes by Farm2Flame</p>
+            <p class="mb-4">123 Frontier Road, Austin, TX 78701</p>
+            <p class="mb-8">contact@cowboysmokes.com</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-white">Facebook</a>
+                <a href="#" class="hover:text-white">Instagram</a>
+                <a href="#" class="hover:text-white">Twitter</a>
+            </div>
+             <p class="mt-8 text-sm text-gray-500">© 2025 Cowboy Smokes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const navLinks = document.getElementById('nav-links');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

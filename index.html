@@ -17,7 +17,7 @@
             font-family: 'Playfair Display', serif;
         }
         .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('COWBOYSMOKES SADDLEBAG.webp');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('COWBOYSMOKES SADDLEBAG.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -34,7 +34,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
         .jingle-section {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('SADDLBAG cs.webp');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('SADDLBAG cs.png');
             background-size: cover;
             background-position: center;
         }
@@ -48,10 +48,7 @@
     <header class="bg-black bg-opacity-80 backdrop-blur-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div>
-                <picture>
-                    <source srcset="CowboySmokes Logo Clear.webp" type="image/webp">
-                    <img src="CowboySmokes Logo Clear.png" alt="Cowboy Smokes Clear Logo" class="h-16 w-auto">
-                </picture>
+                <img src="CowboySmokes Logo Clear.png" alt="Cowboy Smokes Clear Logo" class="h-16 w-auto">
             </div>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#products" class="text-gray-300 hover:text-white"><i class="fas fa-cube nav-icon"></i>Products</a>
@@ -85,13 +82,10 @@
     <section id="products" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-playfair font-bold text-center mb-12">Our Offerings</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Product Card 1: Cowboy Smokes -->
                 <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
-                    <picture>
-                        <source srcset="cowboysmokes.webp" type="image/webp">
-                        <img src="cowboysmokes.png" alt="Cowboy Smokes 5-pack packaging" class="w-full h-56 object-contain p-4">
-                    </picture>
+                    <img src="cowboysmokes.png" alt="Cowboy Smokes 5-pack packaging" class="w-full h-56 object-contain p-4">
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-bold mb-2">Cowboy Smokes</h3>
                         <p class="text-gray-400 mb-4">"Raw, Rolled, and Ready."</p>
@@ -101,10 +95,7 @@
                 </div>
                 <!-- Product Card 2: Cowboy Lights -->
                 <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
-                    <picture>
-                        <source srcset="cowboy lights.webp" type="image/webp">
-                        <img src="cowboy lights.png" alt="Cowboy Lights 5-pack packaging" class="w-full h-56 object-contain p-4">
-                    </picture>
+                    <img src="cowboy lights.png" alt="Cowboy Lights 5-pack packaging" class="w-full h-56 object-contain p-4">
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-bold mb-2">Cowboy Lights</h3>
                         <p class="text-gray-400 mb-4">"Old soul. New spark."</p>
@@ -112,25 +103,9 @@
                         <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
                     </div>
                 </div>
-                <!-- Product Card 3: Cowboy Lights Alternate -->
+                <!-- Product Card 3: Cowboy Rolls -->
                 <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
-                    <picture>
-                        <source srcset="COWBOY LIGHTS (2).webp" type="image/webp">
-                        <img src="COWBOY LIGHTS (2).png" alt="Cowboy Lights alternate 5-pack design" class="w-full h-56 object-contain p-4">
-                    </picture>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-2xl font-bold mb-2">Cowboy Lights Alternate</h3>
-                        <p class="text-gray-400 mb-4">"Light, yet legendary."</p>
-                        <p class="mb-4 flex-grow">A refined blend of Cowboy Lights, offering a distinct smoking experience.</p>
-                        <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
-                    </div>
-                </div>
-                <!-- Product Card 4: Cowboy Rolls -->
-                <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
-                    <picture>
-                        <source srcset="Cowboyrolls.webp" type="image/webp">
-                        <img src="Cowboyrolls.png" alt="Cowboy Rolls whole leaf tobacco packaging" class="w-full h-56 object-contain p-4">
-                    </picture>
+                    <img src="Cowboyrolls.png" alt="Cowboy Rolls whole leaf tobacco packaging" class="w-full h-56 object-contain p-4">
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-bold mb-2">Cowboy Rolls</h3>
                         <p class="text-gray-400 mb-4">"Whole leaf. Whole truth."</p>
@@ -138,29 +113,13 @@
                         <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
                     </div>
                 </div>
-                <!-- Product Card 5: Cowboy Cut -->
+                <!-- Product Card 4: Cowboy Cut -->
                 <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
-                    <picture>
-                        <source srcset="Cowboy Cut.webp" type="image/webp">
-                        <img src="Cowboy Cut.png" alt="Cowboy Cut rolling tobacco packaging" class="w-full h-56 object-contain p-4">
-                    </picture>
+                    <img src="Cowboy Cut.png" alt="Cowboy Cut rolling tobacco packaging" class="w-full h-56 object-contain p-4">
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-bold mb-2">Cowboy Cut</h3>
                         <p class="text-gray-400 mb-4">"The Real Leaf, The Right Cut."</p>
                         <p class="mb-4 flex-grow">Smooth, specialty cut 100% whole leaf tobacco for the perfect roll-your-own smoke.</p>
-                        <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
-                    </div>
-                </div>
-                <!-- Product Card 6: Cowboy Lights Variant V -->
-                <div class="card rounded-lg overflow-hidden shadow-lg flex flex-col">
-                    <picture>
-                        <source srcset="COWBOY LIGHTS V.webp" type="image/webp">
-                        <img src="COWBOY LIGHTS V.png" alt="Cowboy Lights variant V packaging" class="w-full h-56 object-contain p-4">
-                    </picture>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-2xl font-bold mb-2">Cowboy Lights Variant V</h3>
-                        <p class="text-gray-400 mb-4">"A new spark for the trail."</p>
-                        <p class="mb-4 flex-grow">A unique take on Cowboy Lights, crafted for a bold yet smooth experience.</p>
                         <button class="w-full mt-auto bg-yellow-700 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded btn">Learn More</button>
                     </div>
                 </div>
@@ -176,10 +135,7 @@
             </div>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 p-4">
-                    <picture>
-                        <source srcset="csSADDLEBAG.webp" type="image/webp">
-                        <img src="csSADDLEBAG.png" alt="Cowboy Smokes saddlebag packaging highlighting Farm to Flame process" class="rounded-lg shadow-2xl">
-                    </picture>
+                    <img src="csSADDLEBAG.png" alt="Cowboy Smokes saddlebag packaging highlighting Farm to Flame process" class="rounded-lg shadow-2xl">
                 </div>
                 <div class="md:w-1/2 p-4">
                     <ul class="space-y-4 text-lg">
@@ -214,44 +170,20 @@
             <h2 class="text-4xl font-playfair font-bold text-center mb-12">Gallery</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
-                    <picture>
-                        <source srcset="cowboysmokes.webp" type="image/webp">
-                        <img class="h-auto max-w-full rounded-lg" src="cowboysmokes.png" alt="Cowboy Smokes 5-pack packaging">
-                    </picture>
-                    <picture>
-                        <source srcset="cowboy lights.webp" type="image/webp">
-                        <img class="h-auto max-w-full rounded-lg" src="cowboy lights.png" alt="Cowboy Lights 5-pack packaging">
-                    </picture>
+                    <img class="h-auto max-w-full rounded-lg" src="cowboysmokes.png" alt="Cowboy Smokes 5-pack packaging">
+                    <img class="h-auto max-w-full rounded-lg" src="cowboy lights.png" alt="Cowboy Lights 5-pack packaging">
                 </div>
                 <div class="grid gap-4">
-                    <picture>
-                        <source srcset="Cowboyrolls.webp" type="image/webp">
-                        <img class="h-auto max-w-full rounded-lg" src="Cowboyrolls.png" alt="Cowboy Rolls whole leaf tobacco packaging">
-                    </picture>
-                    <picture>
-                        <source srcset="Cowboy Cut.webp" type="image/webp">
-                        <img class="h-auto max-w-full rounded-lg" src="Cowboy Cut.png" alt="Cowboy Cut rolling tobacco packaging">
-                    </picture>
+                    <img class="h-auto max-w-full rounded-lg" src="Cowboyrolls.png" alt="Cowboy Rolls whole leaf tobacco packaging">
+                    <img class="h-auto max-w-full rounded-lg" src="Cowboy Cut.png" alt="Cowboy Cut rolling tobacco packaging">
                 </div>
                 <div class="grid gap-4">
-                    <picture>
-                        <source srcset="Cowboysmokes 5 pack.webp" type="image/webp">
-                        <img class="h-auto max-w-full rounded-lg" src="Cowboysmokes 5 pack.png" alt="Collection of Cowboy Smokes 5-pack">
-                    </picture>
-                    <picture>
-                        <source srcset="COWBOY LIGHTS (2).webp" type="image/webp">
-                        <img class="h-auto max-w-full rounded-lg" src="COWBOY LIGHTS (2).png" alt="Alternate Cowboy Lights 5-pack design">
-                    </picture>
+                    <img class="h-auto max-w-full rounded-lg" src="Cowboysmokes 5 pack.png" alt="Collection of Cowboy Smokes 5-pack">
+                    <img class="h-auto max-w-full rounded-lg" src="COWBOY LIGHTS (2).png" alt="Alternate Cowboy Lights 5-pack design">
                 </div>
                 <div class="grid gap-4">
-                    <picture>
-                        <source srcset="COWBOY LIGHTS V.webp" type="image/webp">
-                        <img class="h-auto max-w-full rounded-lg" src="COWBOY LIGHTS V.png" alt="Cowboy Lights variant V packaging">
-                    </picture>
-                    <picture>
-                        <source srcset="COWBOYSMOKES SADDLEBAG.webp" type="image/webp">
-                        <img class="h-auto max-w-full rounded-lg" src="COWBOYSMOKES SADDLEBAG.png" alt="Cowboy Smokes saddlebag packaging">
-                    </picture>
+                    <img class="h-auto max-w-full rounded-lg" src="COWBOY LIGHTS V.png" alt="Cowboy Lights variant packaging">
+                    <img class="h-auto max-w-full rounded-lg" src="COWBOYSMOKES SADDLEBAG.png" alt="Cowboy Smokes saddlebag packaging">
                 </div>
             </div>
         </div>
@@ -259,10 +191,7 @@
     <!-- Footer -->
     <footer id="contact" class="bg-black py-12">
         <div class="container mx-auto px-6 text-center text-gray-400">
-            <picture>
-                <source srcset="Cowboy Smokes logo Dark.webp" type="image/webp">
-                <img src="Cowboy Smokes logo Dark.png" alt="Cowboy Smokes Dark Logo" class="h-20 w-auto mx-auto mb-4">
-            </picture>
+            <img src="Cowboy Smokes logo Dark.png" alt="Cowboy Smokes Dark Logo" class="h-20 w-auto mx-auto mb-4">
             <p class="mb-4">Cowboy Smokes by Farm2Flame</p>
             <p class="mb-4">123 Frontier Road, Austin, TX 78701</p>
             <p class="mb-8">contact@cowboysmokes.com</p>
